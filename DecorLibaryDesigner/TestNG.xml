@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="DecoLibrary">
+
+
+	
+	<test name="Automation framework">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.DL.testCases.TC_001_LoginToDL" />
+			<class name="com.DL.testCases.TC_002_CreateProject" />
+			<!-- <class name="com.DL.testCases.TC_003_CreateRoom" /> 
+			Room will be created in TC_004_CreateShoppingList -->
+			<class name="com.DL.testCases.TC_004_CreateShoppingList" />
+			<class name="com.DL.testCases.TC_005_CreateItemRoom" />
+			<class name="com.DL.testCases.TC_006_AddLibraryItem" />
+		</classes>
+
+	</test>
+
+</suite>

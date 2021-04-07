@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="DecoLibrary">
+
+<listeners>
+		<listener class-name="com.DL.utilities.TestListener" />
+	</listeners>
+	
+	
+	<test name="Automation framework">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.DL.testCases.TC_001_LoginToDL" />
+			<class name="com.DL.testCases.TC_002_CreateProject" />
+			
+</classes>
+	</test>
+
+</suite>
