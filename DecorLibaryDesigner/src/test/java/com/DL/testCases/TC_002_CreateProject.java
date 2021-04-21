@@ -59,7 +59,7 @@ public class TC_002_CreateProject extends BaseClass {
 		WebElement droparea = driver
 				.findElement(By.xpath("//div[@class='well my-drop-zone text-center padding-tb-30']"));
 		// drop the file
-		DropFile(new File("D:\\NuwanM\\eclipseWorkPlace\\DecorLibaryDesigner\\images\\project-management-6.jpg"),
+		DropFile(new File("C:\\Users\\NuwanMaduranga\\git\\DecoLibSelenium\\DecorLibaryDesigner\\images\\project-management-6.jpg"),
 				droparea, 0, 0);
 		new WebDriverWait(driver, 40).until(ExpectedConditions.elementToBeClickable(projectpage.btnAddProject));
 		projectpage.btnAddProject.click();

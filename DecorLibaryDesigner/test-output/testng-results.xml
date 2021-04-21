@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="DecoLibrary" duration-ms="48579" started-at="2021-04-06T20:15:15 IST" finished-at="2021-04-06T20:16:04 IST">
+  <suite name="DecoLibrary" duration-ms="40687" started-at="2021-04-21T19:15:26 IST" finished-at="2021-04-21T19:16:07 IST">
     <groups>
     </groups>
-    <test name="Automation framework" duration-ms="48579" started-at="2021-04-06T20:15:15 IST" finished-at="2021-04-06T20:16:04 IST">
+    <test name="Automation framework" duration-ms="40687" started-at="2021-04-21T19:15:26 IST" finished-at="2021-04-21T19:16:07 IST">
       <class name="com.DL.testCases.TC_001_LoginToDL">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.DL.testCases.TC_001_LoginToDL@86be70a]" name="setup" is-config="true" duration-ms="11130" started-at="2021-04-06T20:15:15 IST" finished-at="2021-04-06T20:15:27 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.DL.testCases.TC_001_LoginToDL@86be70a]" name="setup" is-config="true" duration-ms="4408" started-at="2021-04-21T19:15:27 IST" finished-at="2021-04-21T19:15:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.DL.testCases.TC_001_LoginToDL@86be70a]" name="login" duration-ms="6486" started-at="2021-04-06T20:15:28 IST" data-provider="DT_01LogintoDL" finished-at="2021-04-06T20:15:34 IST">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.DL.testCases.TC_001_LoginToDL@86be70a]" name="login" duration-ms="6311" started-at="2021-04-21T19:15:31 IST" data-provider="DT_01LogintoDL" finished-at="2021-04-21T19:15:38 IST">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
         </test-method> <!-- login -->
       </class> <!-- com.DL.testCases.TC_001_LoginToDL -->
       <class name="com.DL.testCases.TC_002_CreateProject">
-        <test-method status="PASS" signature="createProject(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.DL.testCases.TC_002_CreateProject@480bdb19]" name="createProject" duration-ms="29515" started-at="2021-04-06T20:15:34 IST" data-provider="DT_02CreateProject" finished-at="2021-04-06T20:16:04 IST">
+        <test-method status="PASS" signature="createProject(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.DL.testCases.TC_002_CreateProject@480bdb19]" name="createProject" duration-ms="29290" started-at="2021-04-21T19:15:38 IST" data-provider="DT_02CreateProject" finished-at="2021-04-21T19:16:07 IST">
           <params>
             <param index="0">
               <value>

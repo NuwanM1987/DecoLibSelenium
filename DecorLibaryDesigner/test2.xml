@@ -12,6 +12,8 @@
 		<classes>
 			<class name="com.DL.testCases.TC_001_LoginToDL" />
 			<class name="com.DL.testCases.TC_002_CreateProject" />
+			<class name="com.DL.testCases.TC_004_CreateShoppingList" />
+			<class name="com.DL.testCases.TC_005_CreateItemRoom" />
 			
 </classes>
 	</test>
