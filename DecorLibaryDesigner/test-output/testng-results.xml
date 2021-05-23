@@ -1,86 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="DecoLibrary" duration-ms="40687" started-at="2021-04-21T19:15:26 IST" finished-at="2021-04-21T19:16:07 IST">
+  <suite name="Default suite" duration-ms="18310" started-at="2021-05-23T23:43:57 IST" finished-at="2021-05-23T23:44:15 IST">
     <groups>
     </groups>
-    <test name="Automation framework" duration-ms="40687" started-at="2021-04-21T19:15:26 IST" finished-at="2021-04-21T19:16:07 IST">
-      <class name="com.DL.testCases.TC_001_LoginToDL">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.DL.testCases.TC_001_LoginToDL@86be70a]" name="setup" is-config="true" duration-ms="4408" started-at="2021-04-21T19:15:27 IST" finished-at="2021-04-21T19:15:31 IST">
+    <test name="Default test" duration-ms="18310" started-at="2021-05-23T23:43:57 IST" finished-at="2021-05-23T23:44:15 IST">
+      <class name="com.DL.testCases.TC_007_UpdateShoppingList">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.DL.testCases.TC_007_UpdateShoppingList@7a765367]" name="setup" is-config="true" duration-ms="9560" started-at="2021-05-23T23:43:57 IST" finished-at="2021-05-23T23:44:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.DL.testCases.TC_001_LoginToDL@86be70a]" name="login" duration-ms="6311" started-at="2021-04-21T19:15:31 IST" data-provider="DT_01LogintoDL" finished-at="2021-04-21T19:15:38 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[yuhan1@yopmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Nuwan@123]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="updateShopingList()[pri:0, instance:com.DL.testCases.TC_007_UpdateShoppingList@7a765367]" name="updateShopingList" duration-ms="8729" started-at="2021-05-23T23:44:07 IST" finished-at="2021-05-23T23:44:15 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- com.DL.testCases.TC_001_LoginToDL -->
-      <class name="com.DL.testCases.TC_002_CreateProject">
-        <test-method status="PASS" signature="createProject(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.DL.testCases.TC_002_CreateProject@480bdb19]" name="createProject" duration-ms="29290" started-at="2021-04-21T19:15:38 IST" data-provider="DT_02CreateProject" finished-at="2021-04-21T19:16:07 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sumal Yohan]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sumal2921@yopmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[7889887881]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Galle Rd]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Galle Subub]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Galle State]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[2211]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[TestAutoNM3]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[this is nuwan home]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProject -->
-      </class> <!-- com.DL.testCases.TC_002_CreateProject -->
-    </test> <!-- Automation framework -->
-  </suite> <!-- DecoLibrary -->
+        </test-method> <!-- updateShopingList -->
+      </class> <!-- com.DL.testCases.TC_007_UpdateShoppingList -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

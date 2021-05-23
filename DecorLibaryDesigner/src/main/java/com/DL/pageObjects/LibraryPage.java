@@ -14,10 +14,10 @@ public class LibraryPage {
 		PageFactory.initElements(rdriver, this);
 	}
 	
-	@FindBy(xpath="/html/body/app-root/app-layout/div/div/app-menubar/div/div/div/div/ul/li[3]/a")
-	public WebElement btnLibrary;
+	@FindBy(xpath="//a[@href='/library']")
+	public WebElement menuLibrary;
 	
-	@FindBy(xpath="/html/body/app-root/app-layout/div/div/div[2]/app-view-library-item/div/div[1]/div[2]/div[2]/button")
+	@FindBy(xpath="//*[@data-intercom-target='viewlibryitm uploadtolibrarybtn']")
 	public WebElement btnAddItemLib;
 	
 

@@ -12,23 +12,24 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.DL.pageObjects.BaseClass;
-import com.DL.pageObjects.CreateItemRoomPage;
-import com.DL.pageObjects.CreateRoomPageNew;
+import com.DL.pageObjects.ItemRoomPage;
+import com.DL.pageObjects.RoomPageNew;
+import com.DL.utilities.ReadConfig;
 import com.DL.utilities.XLUtils;
 
 import freemarker.core.ReturnInstruction.Return;
 
 public class TC_005_CreateItemRoom extends BaseClass {
-	CreateItemRoomPage createiRoomn;
-	CreateRoomPageNew createRoomn;
-	
-//	@Test(dataProvider="DT_03CreateRoomItem")
-	@Test(dependsOnGroups = { "com.DL.testCases.TC_001_LoginToDL" }, dataProvider = "DT_03CreateRoomItem")
+	ItemRoomPage createiRoomn;
+	RoomPageNew createRoomn;
+	ReadConfig readconfig = new ReadConfig();
+@Test(dataProvider="DT_03CreateRoomItem")
+	//@Test(dependsOnGroups = { "com.DL.testCases.TC_001_LoginToDL" }, dataProvider = "DT_03CreateRoomItem")
 	public void createItemRoom(String ProductCode,String ItemName,String ItemColor,String Dimension,String Description,String LeadTime,String ItemPrice,
 			String ProductMargin,String RRP,String Weight,String Tags,String Note,String CareInstruction) throws InterruptedException {
 		
-		createiRoomn=new CreateItemRoomPage(driver);
-		createRoomn = new CreateRoomPageNew(driver);
+		createiRoomn=new ItemRoomPage(driver);
+		createRoomn = new RoomPageNew(driver);
 	//	createRoomn.selectProject();
 		Thread.sleep(4000);
 	//	new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(createiRoomn.btnFloorplan));
@@ -77,8 +78,8 @@ public class TC_005_CreateItemRoom extends BaseClass {
 		createiRoomn.Note.sendKeys(Note);
 		createiRoomn.CInstruction.sendKeys(CareInstruction);
 		Thread.sleep(2000);
-		createiRoomn.btnUpload.sendKeys("D:\\NuwanM\\eclipseWorkPlace\\DecorLibaryDesigner\\images\\project-management-6.jpg");
-		Thread.sleep(3000);
+		createiRoomn.btnUpload.sendKeys("C:\\Users\\NuwanMaduranga\\git\\DecoLibSelenium\\DecorLibaryDesigner\\images\\project-management-6.jpg");
+		Thread.sleep(6000);
 		createiRoomn.btnAddItem.click();
 		Thread.sleep(3000);
 		

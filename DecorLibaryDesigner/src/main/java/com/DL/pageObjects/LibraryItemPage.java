@@ -97,7 +97,7 @@ public class LibraryItemPage {
 		public WebElement btnUpload;
 		
 		
-	@FindBy(xpath="//*[@type='submit']")
+	@FindBy(xpath="//*[@class='mat-button-wrapper' and contains(text(),'Add library item')]")
 	public WebElement btnAddItem;
 	
 	@FindBy(xpath="//*[@role='alertdialog']")

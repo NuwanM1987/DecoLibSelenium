@@ -7,12 +7,24 @@
   <test thread-count="5" name="Automation framework(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="com.DL.testCases.TC_005_CreateItemRoom">
+        <methods>
+          <include name="createItemRoom" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.DL.testCases.TC_005_CreateItemRoom -->
       <class name="com.DL.testCases.TC_002_CreateProject">
         <methods>
           <include name="setup"/>
-          <include name="createProject" invocation-numbers="0"/>
+          <include name="createProject"/>
         </methods>
       </class> <!-- com.DL.testCases.TC_002_CreateProject -->
+      <class name="com.DL.testCases.TC_004_CreateShoppingList">
+        <methods>
+          <include name="createShoppingitem" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.DL.testCases.TC_004_CreateShoppingList -->
     </classes>
   </test> <!-- Automation framework(failed) -->
 </suite> <!-- Failed suite [DecoLibrary] -->

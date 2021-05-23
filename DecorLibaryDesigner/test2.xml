@@ -4,18 +4,19 @@
 
 <listeners>
 		<listener class-name="com.DL.utilities.TestListener" />
-	</listeners>
+</listeners>
 	
 	
 	<test name="Automation framework">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.DL.testCases.TC_001_LoginToDL" />
-			<class name="com.DL.testCases.TC_002_CreateProject" />
+			<class name="com.DL.testCases.TC_002_CreateProject" />  
 			<class name="com.DL.testCases.TC_004_CreateShoppingList" />
 			<class name="com.DL.testCases.TC_005_CreateItemRoom" />
+			<class name="com.DL.testCases.TC_006_AddLibraryItem" />  
 			
-</classes>
+		</classes>
 	</test>
 
 </suite>

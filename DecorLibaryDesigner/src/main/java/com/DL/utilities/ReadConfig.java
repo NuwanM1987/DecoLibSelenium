@@ -46,6 +46,12 @@ public class ReadConfig {
 	return chromepath;
 	}
 	
+	public String getImagePath() {
+		String imagepath =pro.getProperty("ImageURL");
+		return imagepath;
+		
+	}
+	
 	public String getIEPath()
 	{
 	String iepath=pro.getProperty("iepath");

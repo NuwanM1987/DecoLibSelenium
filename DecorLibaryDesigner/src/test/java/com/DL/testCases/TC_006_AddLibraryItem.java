@@ -2,7 +2,10 @@ package com.DL.testCases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,8 +13,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.DL.pageObjects.BaseClass;
-import com.DL.pageObjects.CreateItemRoomPage;
-import com.DL.pageObjects.CreateProjectPage;
+import com.DL.pageObjects.ItemRoomPage;
+import com.DL.pageObjects.ProjectPage;
 import com.DL.pageObjects.DashboardPage;
 import com.DL.pageObjects.LibraryItemPage;
 import com.DL.pageObjects.LibraryPage;
@@ -21,32 +24,38 @@ import com.DL.utilities.XLUtils;
 public class TC_006_AddLibraryItem extends BaseClass {
 	LibraryPage Libpage;
 	LibraryItemPage libraryitem;
-	CreateItemRoomPage createItem;;
+	ItemRoomPage createItem;;
 	LoginPage login;
 	
 	@Test(dataProvider = "DT_05CreateLibraryItem")
 	//@Test
 	public void createItemLib(String ProductCode,String ItemName,String ItemColor,String Dimension,String Description,String LeadTime,String ItemPrice
 			,String ProductMargin,String RRP,String Weight,String Tags,String Note,String CareInstruction) throws InterruptedException {
-	// login = new LoginPage(driver);
-	// login.txtUserName.sendKeys("kishan1@yopmail.com");
-	// login.txtPassword.sendKeys("Nuwan@123");
-	// login.btnLogin.click();
+		
+	//login = new LoginPage(driver);
+	//login.txtUserName.sendKeys("kishan1@yopmail.com");
+	//login.txtPassword.sendKeys("Nuwan@123");
+	//login.btnLogin.click();
 		Thread.sleep(6000);
 		Libpage= new LibraryPage(driver);
 		libraryitem=new LibraryItemPage(driver);
 		Thread.sleep(3000);
-		Libpage.btnLibrary.click();
+		Libpage.menuLibrary.click();
 		Thread.sleep(10000);
 		Libpage.btnAddItemLib.click();
 		Thread.sleep(10000);
 		//new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(libraryitem.selectPrductTypeList));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,-550)");
 		libraryitem.txtProductCode.sendKeys(ProductCode);
+		Thread.sleep(3000);
 		libraryitem.selectPrductTypeList.click();
 		libraryitem.selectProductType.click();
 		Thread.sleep(3000);
 		libraryitem.selectProductSubTypeList.click();
 		libraryitem.selectPrductSubType.click();
+		Thread.sleep(3000);
+		
 		libraryitem.txtItemName.sendKeys(ItemName);
 		libraryitem.txtColor.sendKeys(ItemColor);
 		libraryitem.selectSupplierList.click();

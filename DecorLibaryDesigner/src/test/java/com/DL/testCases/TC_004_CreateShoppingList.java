@@ -2,6 +2,7 @@ package com.DL.testCases;
 
 import java.io.IOException;
 
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -12,21 +13,21 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.DL.pageObjects.BaseClass;
-import com.DL.pageObjects.CreateRoomPageNew;
+import com.DL.pageObjects.RoomPageNew;
 import com.DL.pageObjects.ShoppingItemPage;
 import com.DL.utilities.XLUtils;
 
 public class TC_004_CreateShoppingList extends BaseClass {
 
-	CreateRoomPageNew createRoomn;
+	RoomPageNew createRoomn;
 	ShoppingItemPage shItem;
 
 	//@Test(dependsOnGroups = { "com.DL.testCases.TC_001_LoginToDL" }, dataProvider = "")
 	@Test(dataProvider="DT_04CreateShoppingItem")
-	public void createShoppingitem(String ProductName,String Measurements,String Itembudget,String Quantity,String Note) throws InterruptedException {
+	public void createShoppingitem(String ProductName,String Measurements,String Itembudget,String Quantity,String Note) throws InterruptedException, IOException, InvalidFormatException {
 		
 		Thread.sleep(15000);
-		createRoomn = new CreateRoomPageNew(driver);
+		createRoomn = new RoomPageNew(driver);
 		shItem = new ShoppingItemPage(driver);
 
 		createRoomn.selectProject();

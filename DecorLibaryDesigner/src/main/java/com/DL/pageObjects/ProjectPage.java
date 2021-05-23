@@ -13,10 +13,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CreateProjectPage {
+public class ProjectPage {
 	WebDriver ldriver;
 	
-	public CreateProjectPage(WebDriver rdriver) {
+	public ProjectPage(WebDriver rdriver) {
 		ldriver = rdriver;
 		PageFactory.initElements(rdriver, this);
 		

@@ -6,11 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CreateItemRoomPage {
+public class ItemRoomPage {
 	
 	WebDriver driver;
 	
-	public CreateItemRoomPage(WebDriver ldriver) {
+	public ItemRoomPage(WebDriver ldriver) {
 		this.driver=ldriver;
 		PageFactory.initElements(ldriver, this);
 				
@@ -113,6 +113,6 @@ public class CreateItemRoomPage {
 	@FindBy(xpath="//p[contains(text(),'Add comma')]")
 	public WebElement lbl;
 	
-	@FindBy(xpath="//*[@type='submit']")
+	@FindBy(xpath="//*[@class='mat-button-wrapper' and contains(text(),'Add an item')]")
 	public WebElement btnAddItem;
 }

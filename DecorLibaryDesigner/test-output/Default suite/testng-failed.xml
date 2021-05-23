@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.DL.testCases.TC_001_LoginToDL">
+      <class name="com.DL.testCases.TC_006_AddLibraryItem">
         <methods>
+          <include name="createItemLib" invocation-numbers="0"/>
           <include name="setup"/>
-          <include name="login"/>
         </methods>
-      </class> <!-- com.DL.testCases.TC_001_LoginToDL -->
+      </class> <!-- com.DL.testCases.TC_006_AddLibraryItem -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

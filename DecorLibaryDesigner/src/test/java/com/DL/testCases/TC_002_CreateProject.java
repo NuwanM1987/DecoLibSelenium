@@ -2,6 +2,7 @@ package com.DL.testCases;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,35 +12,25 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.DL.pageObjects.BaseClass;
-import com.DL.pageObjects.CreateProjectPage;
+import com.DL.pageObjects.ProjectPage;
 import com.DL.pageObjects.DashboardPage;
 import com.DL.utilities.XLUtils;
 
 public class TC_002_CreateProject extends BaseClass {
-
+	Random rand = new Random();
+	 int rand_int1 = rand.nextInt(1000);
 	//@Test(dependsOnGroups = { "com.DL.testCases.TC_001_LoginToDL" }, dataProvider = "")
 	@Test(dataProvider="DT_02CreateProject")
 	public void createProject(String CustomerName,String CustomerEmail,String MobNo,String Address,String Suburb,String State,String PostalCode,String ProjectName,String Description) throws InterruptedException {
 		// LoginPage login = new LoginPage(driver);
 		DashboardPage dashboard = new DashboardPage(driver);
-		CreateProjectPage projectpage = new CreateProjectPage(driver);
+		ProjectPage projectpage = new ProjectPage(driver);
 		Thread.sleep(8000);
 		dashboard.clickCreateprojectBtn();
-	//	new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(dashboard.btnCreateProject))
-		//		.click();
-		// dashboard.btnCreateProject.click();
-
-		// Element select via JS
-		/*
-		 * WebElement el= driver.findElement(By.className("deco-dash-add-btn"));
-		 * JavascriptExecutor executor = (JavascriptExecutor)driver;
-		 * executor.executeScript("arguments[0].click();", el);
-		 */
-
 		new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(projectpage.txtClientName));
 		projectpage.txtClientName.sendKeys(CustomerName);
 		projectpage.txtClientEmail.sendKeys(CustomerEmail);
-		projectpage.txtMobNo.sendKeys(MobNo);
+		projectpage.txtMobNo.sendKeys(MobNo+rand_int1);
 		projectpage.txtAddress.sendKeys(Address);
 		projectpage.txtSuburb.sendKeys(Suburb);
 		projectpage.txtState.sendKeys(State);
