@@ -17,7 +17,7 @@ import com.DL.pageObjects.DashboardPage;
 import com.DL.utilities.XLUtils;
 
 public class TC_002_CreateProject extends BaseClass {
-	Random rand = new Random();
+	 Random rand = new Random();
 	 int rand_int1 = rand.nextInt(1000);
 	//@Test(dependsOnGroups = { "com.DL.testCases.TC_001_LoginToDL" }, dataProvider = "")
 	@Test(dataProvider="DT_02CreateProject")

@@ -22,7 +22,7 @@ public class ProjectPage {
 		
 			}
 
-	@FindBy(xpath="//*[@id='mat-input-2']")
+	@FindBy(xpath="//*[@formcontrolname='customername']")
 	public WebElement txtClientName;
 	
 	@FindBy(xpath="//*[@id='mat-input-3']")
@@ -65,9 +65,35 @@ public class ProjectPage {
 	@FindBy(xpath="//div[@class='well my-drop-zone text-center padding-tb-30']")
 	public WebElement dropArea;
 	
+	@FindBy(xpath="//button[contains(text(),'Project Overview')]")
+	public WebElement btnProjView;
 	
+	//Update Details
+	
+	@FindBy(xpath="//*[@formcontrolname='name']")
+	public WebElement txtClname;
+	
+	@FindBy(xpath="//*[@formcontrolname='mobileNo']")
+	public WebElement txtMob;
+	
+	@FindBy(xpath="//*[@formcontrolname='address']")
+	public WebElement txtAddrs;
+	
+	@FindBy(xpath="//*[@role='tab' and @aria-posinset=2 ]")
+	public WebElement tabProjDet;
 	//public WebElement droparea = ldriver.findElement(By.xpath("//div[@class='well my-drop-zone text-center padding-tb-30']"));
 	
+	@FindBy(xpath="//*[@formcontrolname='name']")
+	public WebElement txtPrjName;
+	
+	@FindBy(xpath="//*[@formcontrolname='description']")
+	public WebElement txtPrjDesc;
+	
+	@FindBy(xpath="//*[contains(text(),'Update')]")
+	public WebElement btnUpdate;
+	
+	@FindBy(xpath="//*[@role='alertdialog']")
+	public WebElement msgSuccessUpdate;
 	
 	
 }

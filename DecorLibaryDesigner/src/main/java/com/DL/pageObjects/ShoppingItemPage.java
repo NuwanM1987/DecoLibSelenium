@@ -59,7 +59,12 @@ public class ShoppingItemPage {
 		@FindBy(xpath="//*[@type='submit']")
 		public WebElement btnSubmit;
 		
-		@FindBy(xpath="/html/body/app-root/app-layout/div/div/div[2]/app-view-project/div/div/mat-accordion/mat-expansion-panel/div/div/app-stepper/div/mat-horizontal-stepper/div[2]/div[1]/div[1]/app-step-one/div[2]/table/tbody/tr/td[8]/button/mat-icon")
+		@FindBy(xpath="//*[@id=\"cdk-step-content-0-0\"]/div[1]/app-step-one/div[2]/table/tbody/tr/td[8]/button")
 		public WebElement btnedit;
+		
+		@FindBy(xpath="//*[@src='../../../../../../assets/images/stepper-images/icon-3.svg' ]")
+		public WebElement btnSource;
+		
+	
 
 }

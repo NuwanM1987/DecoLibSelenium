@@ -91,7 +91,7 @@ public class TC_006_AddLibraryItem extends BaseClass {
 		Thread.sleep(5000);
 		libraryitem.btnAddItem.click();
 		Thread.sleep(6000);
-		String success =libraryitem.toasmessage.getText();
+		String success =libraryitem.toastmessage.getText();
 		System.out.println("Item Created:" + success);
 		
 	}

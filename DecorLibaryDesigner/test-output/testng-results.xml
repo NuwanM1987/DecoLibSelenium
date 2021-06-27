@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18310" started-at="2021-05-23T23:43:57 IST" finished-at="2021-05-23T23:44:15 IST">
+  <suite name="Default suite" duration-ms="27586" started-at="2021-06-27T18:16:41 IST" finished-at="2021-06-27T18:17:08 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18310" started-at="2021-05-23T23:43:57 IST" finished-at="2021-05-23T23:44:15 IST">
-      <class name="com.DL.testCases.TC_007_UpdateShoppingList">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.DL.testCases.TC_007_UpdateShoppingList@7a765367]" name="setup" is-config="true" duration-ms="9560" started-at="2021-05-23T23:43:57 IST" finished-at="2021-05-23T23:44:07 IST">
+    <test name="Default test" duration-ms="27586" started-at="2021-06-27T18:16:41 IST" finished-at="2021-06-27T18:17:08 IST">
+      <class name="com.DL.testCases.TC_010_AddTrackedtimedetails">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.DL.testCases.TC_010_AddTrackedtimedetails@7a765367]" name="setup" is-config="true" duration-ms="5122" started-at="2021-06-27T18:16:41 IST" finished-at="2021-06-27T18:16:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="updateShopingList()[pri:0, instance:com.DL.testCases.TC_007_UpdateShoppingList@7a765367]" name="updateShopingList" duration-ms="8729" started-at="2021-05-23T23:44:07 IST" finished-at="2021-05-23T23:44:15 IST">
+        <test-method status="PASS" signature="AddTrackedtimedetails()[pri:0, instance:com.DL.testCases.TC_010_AddTrackedtimedetails@7a765367]" name="AddTrackedtimedetails" duration-ms="22421" started-at="2021-06-27T18:16:46 IST" finished-at="2021-06-27T18:17:08 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateShopingList -->
-      </class> <!-- com.DL.testCases.TC_007_UpdateShoppingList -->
+        </test-method> <!-- AddTrackedtimedetails -->
+      </class> <!-- com.DL.testCases.TC_010_AddTrackedtimedetails -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

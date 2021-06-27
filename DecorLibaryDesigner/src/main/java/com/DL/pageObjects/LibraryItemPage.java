@@ -101,6 +101,6 @@ public class LibraryItemPage {
 	public WebElement btnAddItem;
 	
 	@FindBy(xpath="//*[@role='alertdialog']")
-	public WebElement toasmessage;
+	public WebElement toastmessage;
 
 }
