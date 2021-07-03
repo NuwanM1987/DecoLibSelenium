@@ -1,6 +1,7 @@
 package com.DL.testCases;
 
 import java.io.IOException;
+import java.util.Random;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -23,6 +24,10 @@ public class TC_005_CreateItemRoom extends BaseClass {
 	ItemRoomPage createiRoomn;
 	RoomPageNew createRoomn;
 	ReadConfig readconfig = new ReadConfig();
+	 Random rand = new Random();
+	 int rand_int1 = rand.nextInt(10000);
+	 int rand_int2 = rand.nextInt(100);
+	
 @Test(dataProvider="DT_03CreateRoomItem")
 	//@Test(dependsOnGroups = { "com.DL.testCases.TC_001_LoginToDL" }, dataProvider = "DT_03CreateRoomItem")
 	public void createItemRoom(String ProductCode,String ItemName,String ItemColor,String Dimension,String Description,String LeadTime,String ItemPrice,
@@ -45,8 +50,8 @@ public class TC_005_CreateItemRoom extends BaseClass {
 		//new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(createiRoomn.selectPrductSubTypeList));
 		createiRoomn.selectPrductSubTypeList.click();
 		createiRoomn.selectProductSubType.click();
-		createiRoomn.txtProductCode.sendKeys(ProductCode);
-		createiRoomn.txtItemName.sendKeys(ItemName);
+		createiRoomn.txtProductCode.sendKeys(ProductCode+rand_int1);
+		createiRoomn.txtItemName.sendKeys(ItemName+rand_int2);
 		createiRoomn.txtItemColor.sendKeys(ItemColor);
 		Thread.sleep(2000);
 		createiRoomn.selectSupplierNameList.click();
@@ -60,6 +65,8 @@ public class TC_005_CreateItemRoom extends BaseClass {
 		createiRoomn.MaterialList.click();
 		createiRoomn.material.click();
 		createiRoomn.LeadTime.sendKeys(LeadTime);
+		String s = Keys.chord(Keys.CONTROL, "a");
+		createiRoomn.ItemPrice.sendKeys(s);
 		createiRoomn.ItemPrice.sendKeys(ItemPrice);
 		createiRoomn.ProductMargin.sendKeys(ProductMargin);
 		createiRoomn.RRP.sendKeys(RRP);

@@ -15,7 +15,7 @@
 			<class name="com.DL.testCases.TC_004_CreateShoppingList" />
 			<class name="com.DL.testCases.TC_005_CreateItemRoom" />
 			<class name="com.DL.testCases.TC_006_AddLibraryItem" />  
-			
+			<class name="com.DL.testCases.TC_010_AddTrackedtimedetails"></class>
 		</classes>
 	</test>
 

@@ -1,6 +1,7 @@
 package com.DL.testCases;
 
 import java.io.IOException;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -26,16 +27,14 @@ public class TC_006_AddLibraryItem extends BaseClass {
 	LibraryItemPage libraryitem;
 	ItemRoomPage createItem;;
 	LoginPage login;
+	 Random rand = new Random();
+	 int rand_int1 = rand.nextInt(10000);
+	 int rand_int2 = rand.nextInt(100);
 	
 	@Test(dataProvider = "DT_05CreateLibraryItem")
-	//@Test
 	public void createItemLib(String ProductCode,String ItemName,String ItemColor,String Dimension,String Description,String LeadTime,String ItemPrice
 			,String ProductMargin,String RRP,String Weight,String Tags,String Note,String CareInstruction) throws InterruptedException {
-		
-	//login = new LoginPage(driver);
-	//login.txtUserName.sendKeys("kishan1@yopmail.com");
-	//login.txtPassword.sendKeys("Nuwan@123");
-	//login.btnLogin.click();
+	
 		Thread.sleep(6000);
 		Libpage= new LibraryPage(driver);
 		libraryitem=new LibraryItemPage(driver);
@@ -47,7 +46,7 @@ public class TC_006_AddLibraryItem extends BaseClass {
 		//new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(libraryitem.selectPrductTypeList));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,-550)");
-		libraryitem.txtProductCode.sendKeys(ProductCode);
+		libraryitem.txtProductCode.sendKeys(ProductCode+rand_int1);
 		Thread.sleep(3000);
 		libraryitem.selectPrductTypeList.click();
 		libraryitem.selectProductType.click();
@@ -56,7 +55,7 @@ public class TC_006_AddLibraryItem extends BaseClass {
 		libraryitem.selectPrductSubType.click();
 		Thread.sleep(3000);
 		
-		libraryitem.txtItemName.sendKeys(ItemName);
+		libraryitem.txtItemName.sendKeys(ItemName+rand_int2);
 		libraryitem.txtColor.sendKeys(ItemColor);
 		libraryitem.selectSupplierList.click();
 		libraryitem.selectSupplier.click();
@@ -68,6 +67,8 @@ public class TC_006_AddLibraryItem extends BaseClass {
 		libraryitem.selectMaterialList.click();
 		libraryitem.selectMaterial.click();
 		libraryitem.Leadtime.sendKeys(LeadTime);
+		String s = Keys.chord(Keys.CONTROL, "a");
+		libraryitem.ItemPrice.sendKeys(s);
 		libraryitem.ItemPrice.sendKeys(ItemPrice);
 		libraryitem.ProductMargin.sendKeys(ProductMargin);
 		Thread.sleep(3000);

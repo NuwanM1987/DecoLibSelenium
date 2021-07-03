@@ -59,7 +59,8 @@ public class AddTrackedtimedetailPage {
 	@FindBy(xpath="//*[@type='submit']")
 	public WebElement btnAddTime;
 	
-	
+	@FindBy(xpath="")
+	public WebElement viewRecord;
 	
 	//Scrolldown to find Project name
 	public void scrolldownProName() {
