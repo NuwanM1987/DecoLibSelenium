@@ -7,36 +7,12 @@
   <test thread-count="5" name="Automation framework(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.DL.testCases.TC_005_CreateItemRoom">
-        <methods>
-          <include name="createItemRoom"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.DL.testCases.TC_005_CreateItemRoom -->
-      <class name="com.DL.testCases.TC_002_CreateProject">
+      <class name="com.DL.testCases.TC_010_AddTrackedtimedetails">
         <methods>
           <include name="setup"/>
-          <include name="createProject"/>
+          <include name="AddTrackedtimedetails" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.DL.testCases.TC_002_CreateProject -->
-      <class name="com.DL.testCases.TC_006_AddLibraryItem">
-        <methods>
-          <include name="createItemLib"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.DL.testCases.TC_006_AddLibraryItem -->
-      <class name="com.DL.testCases.TC_004_CreateShoppingList">
-        <methods>
-          <include name="createShoppingitem"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.DL.testCases.TC_004_CreateShoppingList -->
-      <class name="com.DL.testCases.TC_001_LoginToDL">
-        <methods>
-          <include name="setup"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- com.DL.testCases.TC_001_LoginToDL -->
+      </class> <!-- com.DL.testCases.TC_010_AddTrackedtimedetails -->
     </classes>
   </test> <!-- Automation framework(failed) -->
 </suite> <!-- Failed suite [DecoLibrary] -->

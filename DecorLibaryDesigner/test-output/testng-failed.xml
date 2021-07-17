@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.DL.testCases.TC_010_AddTrackedtimedetails">
+      <class name="com.DL.testCases.TC_011_AddTeamMember">
         <methods>
           <include name="setup"/>
-          <include name="AddTrackedtimedetails"/>
+          <include name="addTeamMember"/>
         </methods>
-      </class> <!-- com.DL.testCases.TC_010_AddTrackedtimedetails -->
+      </class> <!-- com.DL.testCases.TC_011_AddTeamMember -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
