@@ -29,4 +29,13 @@ public class ProfilePage {
 	
 	@FindBy(xpath="/html/body/app-root/app-layout/div/div/app-header/div/div/div/div[2]/span[3]/div")
 	public WebElement linkDropdown;
+	
+	@FindBy(xpath="//*[contains(text(),'TEAM MANAGEMENT')]")
+	public WebElement linkTeaMManagement;
+	
+	@FindBy(xpath="//*[@formcontrolname='email']")
+	public WebElement txtemail;
+	
+	@FindBy(xpath="//*[contains(text(),'Add a team member')]")
+	WebElement btnAddTeamMember1;
 }

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12188" started-at="2021-07-17T08:39:33 IST" finished-at="2021-07-17T08:39:45 IST">
+  <suite name="Default suite" duration-ms="17761" started-at="2021-07-21T13:26:54 IST" finished-at="2021-07-21T13:27:12 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12188" started-at="2021-07-17T08:39:33 IST" finished-at="2021-07-17T08:39:45 IST">
+    <test name="Default test" duration-ms="17761" started-at="2021-07-21T13:26:54 IST" finished-at="2021-07-21T13:27:12 IST">
       <class name="com.DL.testCases.TC_011_AddTeamMember">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.DL.testCases.TC_011_AddTeamMember@7a765367]" name="setup" is-config="true" duration-ms="8738" started-at="2021-07-17T08:39:33 IST" finished-at="2021-07-17T08:39:42 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.DL.testCases.TC_011_AddTeamMember@7a765367]" name="setup" is-config="true" duration-ms="4890" started-at="2021-07-21T13:26:54 IST" finished-at="2021-07-21T13:26:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="addTeamMember()[pri:0, instance:com.DL.testCases.TC_011_AddTeamMember@7a765367]" name="addTeamMember" duration-ms="3425" started-at="2021-07-17T08:39:42 IST" finished-at="2021-07-17T08:39:45 IST">
+        <test-method status="PASS" signature="addTeamMember()[pri:0, instance:com.DL.testCases.TC_011_AddTeamMember@7a765367]" name="addTeamMember" duration-ms="12833" started-at="2021-07-21T13:26:59 IST" finished-at="2021-07-21T13:27:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addTeamMember -->
